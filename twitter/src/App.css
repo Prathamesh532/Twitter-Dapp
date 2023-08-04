@@ -1,0 +1,492 @@
+
+
+/* app.js */
+/* App.css */
+
+.App {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+}
+
+p.font {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.label0 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerBox {
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 300px;
+  max-width: 100%;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+/* Add this CSS to your App.css or create a new CSS file */
+/* GetLastestTweet */
+
+.get-latest-tweet {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.get-latest-tweet form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-latest-tweet label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.get-latest-tweet input[type="number"] {
+  width: 200px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.get-latest-tweet button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.get-latest-tweet button:hover {
+  background-color: #45a049;
+}
+
+.latest-tweets {
+  margin-top: 20px;
+}
+
+.latest-tweets h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.latest-tweets ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.latest-tweets li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.latest-tweets p {
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* SendMessage  */
+
+.send-message {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.send-message form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.send-message h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.send-message label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.send-message input[type="text"] {
+  width: 300px;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.send-message button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.send-message button:hover {
+  background-color: #45a049;
+}
+
+.message-history {
+  margin-top: 20px;
+}
+
+.message-history h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.message-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-history li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message-history p {
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* Tweets */
+
+.tweets-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.tweets-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tweets-container input[type="text"] {
+  width: 300px;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.tweets-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.tweets-container button:hover {
+  background-color: #45a049;
+}
+
+.tweets-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.tweets-list li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Follow.css */
+
+.follow-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.follow-container h4 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.follow-container form {
+  display: flex;
+  align-items: center;
+}
+
+.follow-container label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.follow-container input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.follow-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.followers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.followers-list li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.Toastify__toast-container {
+  top: 70px;
+  right: 20px;
+}
+
+/* getUser css */
+/* GetUser.css */
+
+.get-user-container {
+  background-color: #282c34;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.user-input,
+.count-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.get-user-button {
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-user-button:hover {
+  background-color: #0056b3;
+}
+
+.tweets-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tweets-list li {
+  margin-bottom: 5px;
+}
+
+/* Following.css */
+
+.following-container {
+  background-color: #282c34;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.following-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.following-container label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.following-container input[type="text"],
+.following-container input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.following-container button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.following-container button:hover {
+  background-color: #0056b3;
+}
+
+.follower-list {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Allow */
+/* Allow.css */
+
+.allow-container {
+  background-color: #282c34;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.allow-container h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.allow-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.allow-container label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.allow-container input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+
+.allow-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.allow-container button:hover {
+  background-color: #0056b3;
+}
+
+.Toastify__toast-container {
+  top: 70px;
+  right: 20px;
+}
+h1 {
+  font-size: 24px;
+}
